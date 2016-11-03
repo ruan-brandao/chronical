@@ -1,5 +1,7 @@
 # Chronical
 
+[![Build Status](https://semaphoreci.com/api/v1/ruan-brandao/chronical/branches/master/badge.svg)](https://semaphoreci.com/ruan-brandao/chronical)
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
