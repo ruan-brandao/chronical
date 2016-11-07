@@ -9,7 +9,7 @@ defmodule Chronical do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      # supervisor(Chronical.Repo, []),
+      supervisor(Chronical.Repo, []),
       # Start the endpoint when the application starts
       supervisor(Chronical.Endpoint, []),
       # Start your own worker by calling: Chronical.Worker.start_link(arg1, arg2, arg3)
