@@ -12,7 +12,7 @@ defmodule Chronical.UserTest do
     refute changeset.valid?
   end
 
-  test "is valid with proper name and username" do
+  test "changeset is valid with proper name and username" do
     changeset = User.changeset(%User{}, %{name: "foo", username: "bar"})
     assert changeset.valid?
   end
