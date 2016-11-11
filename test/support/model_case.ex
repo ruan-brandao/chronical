@@ -22,6 +22,7 @@ defmodule Chronical.ModelCase do
       import Ecto.Changeset
       import Ecto.Query
       import Chronical.ModelCase
+      import Chronical.TestHelpers
     end
   end
 

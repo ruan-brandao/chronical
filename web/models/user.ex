@@ -20,7 +20,7 @@ defmodule Chronical.User do
     model
     |> changeset(params)
     |> cast(params, ~w(password), [])
-    |> validate_length(:password, mi: 6, max: 100)
+    |> validate_length(:password, min: 6, max: 100)
     |> put_pass_hash()
   end
 
