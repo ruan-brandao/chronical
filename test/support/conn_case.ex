@@ -26,6 +26,7 @@ defmodule Chronical.ConnCase do
       import Ecto.Query
 
       import Chronical.Router.Helpers
+      import Chronical.TestHelpers
 
       # The default endpoint for testing
       @endpoint Chronical.Endpoint

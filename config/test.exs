@@ -9,6 +9,10 @@ config :chronical, Chronical.Endpoint,
 # Print only warnings and errors during test
 config :logger, level: :warn
 
+# Have less hashing rounds to speed up tests
+config :comeonin, :bcrypt_log_rounds, 4
+config :comeonin, :pbkdf2_rounds, 1
+
 # Configure your database
 config :chronical, Chronical.Repo,
   adapter: Ecto.Adapters.Postgres,
