@@ -11,7 +11,7 @@ defmodule Chronical.SessionController do
         conn
         |> put_flash(:info, "Welcome back!")
         |> redirect(to: page_path(conn, :index))
-      {:error, _reason, conn } ->
+      {:error, _reason, conn} ->
         conn
         |> put_flash(:error, "Invalid username/password combination")
         |> render("new.html")
