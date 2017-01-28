@@ -1,0 +1,23 @@
+<h2>Show story</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @story.user_id %>
+  </li>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @story.title %>
+  </li>
+
+  <li>
+    <strong>Content:</strong>
+    <%= @story.content %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: story_path(@conn, :edit, @story) %>
+<%= link "Back", to: story_path(@conn, :index) %>

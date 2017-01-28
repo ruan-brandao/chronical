@@ -20,6 +20,7 @@ defmodule Chronical.Router do
     get "/", PageController, :index
     resources "/users", UserController, only: [:index, :new, :show, :create]
     resources "/sessions", SessionController, only: [:new, :create, :delete]
+    resources "/stories", StoryController
   end
 
   # Other scopes may use custom stacks.
