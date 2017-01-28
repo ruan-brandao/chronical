@@ -20,6 +20,11 @@ defmodule Chronical.Router do
     get "/", PageController, :index
     resources "/users", UserController, only: [:index, :new, :show, :create]
     resources "/sessions", SessionController, only: [:new, :create, :delete]
+  end
+
+  scope "/create", Chronical do
+    pipe_through [:browser, :authenticate_user]
+
     resources "/stories", StoryController
   end
 
