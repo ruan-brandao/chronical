@@ -36,6 +36,7 @@ defmodule Chronical.Web do
 
       import Chronical.Router.Helpers
       import Chronical.Gettext
+      import Chronical.Auth, only: [authenticate_user: 2]
     end
   end
 
@@ -58,6 +59,7 @@ defmodule Chronical.Web do
   def router do
     quote do
       use Phoenix.Router
+      import Chronical.Auth, only: [authenticate_user: 2]
     end
   end
 
